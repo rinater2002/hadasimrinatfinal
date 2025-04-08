@@ -1,0 +1,56 @@
+/* עיצוב רקע כללי */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f6f3;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* מיכל מרכזי */
+  .login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .login-container h1 {
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .login-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* כפתורים */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn {
+    background-color: #8d7b68;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #7a6856;
+  }
+  

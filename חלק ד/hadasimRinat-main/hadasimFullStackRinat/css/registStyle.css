@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f1eb;
+  direction: rtl;
+}
+
+h2{
+  text-align: center;
+}
+
+.form-container {
+  background-color: #ffffff; /* לבן נקי */
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* הצללה עדינה */
+  text-align: right;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+  padding-right: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  resize: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background-color:  #8d7b68;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.form-container button:hover {
+  background-color: #7a6856;
+}
+
+#go_home{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #bfa38f;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}

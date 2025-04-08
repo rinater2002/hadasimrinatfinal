@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>רישום ספק</title>
+  <link rel="stylesheet" href="../css/registStyle.css">
+</head>
+<body>
+  <a id=go_home href="../html/login.html">חזרה לעמוד ההתחברות</a>
+  <h2>רישום ספק חדש</h2>
+  <div class="form-container">
+    <form onsubmit="registerUser(event)">
+      <label for="name">שם משתמש:</label>
+      <input type="name" id="name" name="name" required>
+
+      <label for="password">סיסמה:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="company">שם חברה:</label>
+      <input type="text" id="company" name="company" required>
+
+      <label for="phone">מספר טלפון:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0501234567" required>
+
+      <label for="representative">שם נציג:</label>
+      <input type="text" id="representative" name="representative" required>
+
+      <label for="products">רשימת סחורות:</label>
+      <textarea id="products" name="products" rows="5" placeholder="הפרד בין הסחורות בפסיקים" required></textarea>
+
+      <button type="submit">שלח רישום</button>
+    </form>
+  </div>
+  <script src="../js/regis.js"></script>
+</body>
+</html>

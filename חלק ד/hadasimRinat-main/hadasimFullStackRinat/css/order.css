@@ -1,0 +1,164 @@
+/* עיצוב כללי */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f1eb;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    color: #3e4a59; /* צבע אפור כהה */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* סרגל צד */
+.sidebar {
+    background-color: #d1b29d; /* צבע חום בהיר */
+    color: white;
+    width: 240px;
+
+    height: 100vh;
+    position: fixed;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;  
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 0px 0px 20px;
+    transition: all 0.3s ease;
+}
+
+
+
+.sidebar h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #d7c7b7; /* גוון בז' בהיר */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #ecf0f1; /* לבן בהיר */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #bfa38f; /* צבע חום כהה יותר */
+    padding-left: 25px;
+}
+
+/* תוכן העמוד */
+.content {
+    margin-right: 220px;
+    padding: 40px;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #3a3a3a;
+}
+
+/* תיבת בחירה */
+label, select {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #3f3f3f;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc5b9;
+    border-radius: 8px;
+    background-color: #f3efea; /* בז' בהיר */
+    color: #2d2d2d;
+}
+
+/* רשימת מוצרים */
+#productList {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    max-width: 600px;
+    margin-top: 20px;
+    border: 1px solid #e0dcd1;
+}
+
+#productList h2 {
+    margin-top: 0;
+    color: #4a4a4a;
+}
+
+#productItems label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #3b3b3b;
+}
+
+#productItems input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+/* כפתור שליחה */
+#submitOrderBtn {
+    background-color: #8d7b68; /* מוקה רך */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#submitOrderBtn:hover {
+    background-color: #7a6856;
+}
+
+/* כפתורים של השאלה אחרי ההזמנה */
+#afterOrderOptions {
+    margin-top: 20px;
+}
+
+#afterOrderOptions button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#afterOrderOptions #newOrderBtn {
+    background-color: #a3d2ca; /* ירקרק פסטלי */
+}
+
+#afterOrderOptions #newOrderBtn:hover {
+    background-color: #88c8be;
+}
+
+#afterOrderOptions #goHomeBtn {
+    background-color: #f5b7b1; /* אדום בהיר */
+}
+
+#afterOrderOptions #goHomeBtn:hover {
+    background-color: #e8a9a0;
+}
+
+/* מחלקה להסתרה */
+.hidden {
+    display: none;
+}

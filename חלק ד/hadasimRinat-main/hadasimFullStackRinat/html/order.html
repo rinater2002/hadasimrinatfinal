@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הזמנת סחורה</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>תפריט</h2>
+        <a href="../html/home.html">דף הבית</a>
+        <a href="../html/login.html">כניסת ספקים</a>
+    </div>
+
+    <div class="content">
+        <h1>הזמנת סחורה מספק</h1>
+
+        <label for="supplierSelect">בחר ספק:</label><br>
+        <select id="supplierSelect">
+            <option value="">בחר ספק</option>
+        </select>
+
+        <div id="productList" class="hidden">
+            <h2>רשימת סחורות</h2>
+            <div id="productItems">
+            </div>
+            <button id="submitOrderBtn">שלח הזמנה</button>
+        </div>
+
+        <div id="afterOrderOptions" class="hidden">
+            <p>האם ברצונך להזמין עוד משהו?</p>
+            <button id="newOrderBtn">הזמנה נוספת</button>
+            <button id="goHomeBtn">חזרה לדף הבית</button>
+        </div>
+    </div>
+
+    <script src="../js/order.js"></script>
+</body>
+</html>

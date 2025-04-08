@@ -1,0 +1,76 @@
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background: #f5f1eb;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* קופסת ההתחברות */
+.login-container {
+    background-color:white;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+/* כותרת */
+.login-container h2 {
+    margin-bottom: 24px;
+    color:  #3e4a59;
+}
+
+/* שדות קלט */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* כפתור התחברות */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8d7b68;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #7a6856;
+}
+
+/* הודעת שגיאה */
+#error-msg {
+    margin-top: 12px;
+    color: red;
+    font-size: 14px;
+}  
+
+#go_home{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #bfa38f;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,217 @@
+/* עיצוב כללי */
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background-color: #f5f1eb; /* צבע בז' בהיר */
+    color: #3e4a59; /* צבע אפור כהה */
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* סרגל צד */
+.sidebar {
+    width: 240px;
+    background-color: #d1b29d; /* צבע חום בהיר */
+    color: white;
+    height: 100vh;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 0px 0px 20px;
+    transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #d7c7b7; /* גוון בז' בהיר */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #ecf0f1; /* לבן בהיר */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #bfa38f; /* צבע חום כהה יותר */
+    padding-left: 25px;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* אנימציה לתפריט */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed a {
+    justify-content: center;
+}
+
+.sidebar.collapsed h2 {
+    display: none;
+}
+
+/* תוכן */
+.content {
+    flex: 1;
+    padding: 40px;
+    overflow: hidden;
+}
+
+/* כותרת ראשית */
+.content h1 {
+    font-size: 32px;
+    color: #3e4a59; /* צבע אפור כהה */
+}
+
+.content p {
+    font-size: 18px;
+    color: #7f8c8d; /* צבע אפור בהיר */
+}
+
+/* כותרת הזמנות */
+#ordersContainer h2 {
+    font-size: 24px;
+    color: #bfa38f; /* צבע חום כהה */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* קונטיינר של ההזמנות */
+#ordersContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+/* כרטיס הזמנה */
+.order {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* כותרת כרטיס הזמנה */
+.order h3 {
+    font-size: 20px;
+    color: #3e4a59;
+    margin-bottom: 10px;
+}
+
+/* פרטי ההזמנה */
+.order ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order ul li {
+    background-color: #f6f8fa;
+    margin: 4px 0;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* סטטוס וכפתור */
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* סטטוס הזמנה */
+.status {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.status.waiting {
+    background-color: #f39c12;
+    color: white;
+}
+
+.status.approved {
+    background-color: #27ae60;
+    color: white;
+}
+
+/* כפתור מחיקה */
+.order button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.order button:hover {
+    background-color: #c0392b;
+}
+
+/* סגנון Hover לכרטיס הזמנה */
+.order:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* כותרת דף הבית */
+.content h1 {
+    font-size: 28px;
+    color: #3e4a59;
+    margin-bottom: 20px;
+}
+
+/* קווים ומרווחים */
+.content p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* סגנון כפתור מחיקה */
+.order button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.order button:hover {
+    background-color: #c0392b;
+}
