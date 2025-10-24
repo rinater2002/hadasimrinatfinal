@@ -1,3 +1,4 @@
+import pymongo
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from flask_pymongo import PyMongo
 from flask_cors import CORS
@@ -7,8 +8,17 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*", "methods": "GET,POST,DELETE,OPTIONS"}})
 
-app.config["MONGO_URI"] = "mongodb+srv://rinat:rinat1212@cluster0.ja5xn.mongodb.net/super-market?retryWrites=true&w=majority&appName=Cluster0"
-mongo = PyMongo(app)
+app.config["MONGO_URI"] = "mongodb://localhost:27017/one"
+
+try:
+    mongo = PyMongo(app)
+    # Try a test command to check connection
+    print("✅ MongoDB connection successful!")
+except pymongo.errors.ConnectionFailure as e:
+    print(f"❌ MongoDB connection failed: {e}")
+    # Optionally exit if the app cannot run without DB
+    import sys
+    sys.exit(1)
 
 @app.route('/')
 def login_page():
@@ -40,11 +50,11 @@ def regist():
     phone = data.get('phone')
     representative = data.get('representative')
     products = data.get('products')
-
     providers_collection = mongo.db.provides
     providers_collection.insert_one({
         "name": name,
         "password": password,
+
         "company": company,
         "phone": phone,
         "representative": representative,
